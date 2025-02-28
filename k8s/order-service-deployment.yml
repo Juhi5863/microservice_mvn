@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-service
+  labels:
+    app: order-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order-service
+  template:
+    metadata:
+      labels:
+        app: order-service
+    spec:
+      containers:
+        - name: order-service
+          image: order-service:latest  # Ensure this image is available in your local Kubernetes cluster
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8082
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: "jdbc:postgresql://postgres.default.svc.cluster.local:5432/ecommercedb"
+            - name: SPRING_DATASOURCE_USERNAME
+              value: "myuser"
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: "mypassword"
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: order-service
+  ports:
+    - protocol: TCP
+      port: 8082  # Exposed service port
+      targetPort: 8082  # Container port inside the pod

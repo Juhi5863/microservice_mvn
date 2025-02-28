@@ -1,0 +1,4 @@
+com\ecommerce\userservice\repository\UserRepository.class
+com\ecommerce\userservice\controller\AuthController.class
+com\ecommerce\userservice\security\JwtUtil.class
+com\ecommerce\userservice\entity\User.class
