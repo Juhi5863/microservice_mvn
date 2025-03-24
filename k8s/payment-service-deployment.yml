@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: payment-service
-          image: localhost:5000/payment-service
+          image: prabsin/microservices_payment-service:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8084

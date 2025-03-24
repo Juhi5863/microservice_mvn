@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.7'
 services:
   postgres:
     image: postgres:17.4
@@ -37,6 +37,7 @@ services:
 
   user-service:
     build: ./user-service
+    image: prabsin/user-service
     container_name: user-service
     depends_on:
       - postgres
@@ -51,6 +52,7 @@ services:
 
   product-service:
     build: ./product-service
+    image: prabsin/product-service
     container_name: product-service
     depends_on:
       - postgres
@@ -65,6 +67,7 @@ services:
 
   order-service:
     build: ./order-service
+    image: prabsin/order-service
     container_name: order-service
     depends_on:
       - postgres
@@ -81,6 +84,7 @@ services:
   payment-service:
     build: ./payment-service
     container_name: payment-service
+    image: prabsin/payment-service
     depends_on:
       - kafka
     ports:

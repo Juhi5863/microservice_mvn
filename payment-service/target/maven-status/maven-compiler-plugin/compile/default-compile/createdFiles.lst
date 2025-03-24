@@ -1,2 +1,2 @@
-com\ecommerce\paymentservice\PaymentServiceApplication.class
-com\ecommerce\paymentservice\kafka\PaymentConsumer.class
+com/ecommerce/paymentservice/PaymentServiceApplication.class
+com/ecommerce/paymentservice/kafka/PaymentConsumer.class
