@@ -1,2 +1,2 @@
-/home/master/Desktop/Microservices/payment-service/src/main/java/com/ecommerce/paymentservice/kafka/PaymentConsumer.java
-/home/master/Desktop/Microservices/payment-service/src/main/java/com/ecommerce/paymentservice/PaymentServiceApplication.java
+/home/master/Microservices/payment-service/src/main/java/com/ecommerce/paymentservice/PaymentServiceApplication.java
+/home/master/Microservices/payment-service/src/main/java/com/ecommerce/paymentservice/kafka/PaymentConsumer.java

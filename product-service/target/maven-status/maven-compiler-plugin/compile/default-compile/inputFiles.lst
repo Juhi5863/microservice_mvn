@@ -1,4 +1,4 @@
-/home/master/Desktop/Microservices/product-service/src/main/java/com/ecommerce/productservice/controller/ProductController.java
-/home/master/Desktop/Microservices/product-service/src/main/java/com/ecommerce/productservice/entity/Product.java
-/home/master/Desktop/Microservices/product-service/src/main/java/com/ecommerce/productservice/ProductServiceApplication.java
-/home/master/Desktop/Microservices/product-service/src/main/java/com/ecommerce/productservice/repository/ProductRepository.java
+/home/master/Microservices/product-service/src/main/java/com/ecommerce/productservice/entity/Product.java
+/home/master/Microservices/product-service/src/main/java/com/ecommerce/productservice/controller/ProductController.java
+/home/master/Microservices/product-service/src/main/java/com/ecommerce/productservice/repository/ProductRepository.java
+/home/master/Microservices/product-service/src/main/java/com/ecommerce/productservice/ProductServiceApplication.java
